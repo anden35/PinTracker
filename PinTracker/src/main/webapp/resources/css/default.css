@@ -1,0 +1,66 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+
+ 
+    Created on : Aug 13, 2017, 3:15:43 PM
+    Author     : Adam*/
+
+
+.main{
+    /*background-image:url("#{resource['images:sunsetBackground.jpg']}");*/ 
+    /*background: linear-gradient(black, darkblue);*/
+    background-repeat:no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: 100%;
+    background-color: grey;
+}
+
+.ui-tabmenuitem:last-child {
+    float: right !important;
+}
+
+.inputTextStyle {
+    background-color: transparent !important;
+}
+.userWelcome{
+    color:white;
+}
+
+.loginText{
+    color: white;
+}
+
+.loginBoxes{
+
+}
+
+.login{
+	
+}
+
+.logout{
+	
+}
+
+.templateMenu{
+    margin: 0px 40px 0px 40px;
+/*    display: inline-block;*/
+}
+
+.templateMenuWelcome{
+    margin: -.40em 0em 0em 0em;
+    position: absolute;
+    right: 1.25em;
+}
+
+.avatarPanel{
+    display: inline-block;
+    position: absolute;
+    right: 2em;
+    background-image: url("../images/pinImages/1-1.jpg");
+}
+

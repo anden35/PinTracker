@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <ui:composition>
+        <h:outputScript library="js" name="default.js"/>
+        <h:outputStylesheet library="css" name="default.css"/>
+            <h:form id ="tabMenu">
+                <center>
+                    <p:panel>
+                        <p:outputLabel  styleClass="templateMenuWelcome" value="#{loginBean.person.firstName} #{loginBean.person.lastName}" style="font-size: 2em"/>
+                        <p:commandLink id="home" value="Home" action="index.xhtml" onmouseover="highLightText" styleClass="templateMenu" title="Return to the Home page."/>
+                        <p:commandLink id="pins" value="Pins" action="pins.xhtml" onmouseover="highLightText" styleClass="templateMenu" title="Go to the Pins page."/>
+                        <p:commandLink id="logout" value="Logout" action="#{loginBean.logout()}" onmouseover="highLightText" styleClass="templateMenu" title="Logout"/>
+                        <!--<p:commandLink id="home" value="Home" action="index.xhtml" onmouseover="highLightText" styleClass="templateMenu" title="Return to the Home page."/>-->
+                        <!--<p:commandLink id="home" value="Home" action="index.xhtml" onmouseover="highLightText" styleClass="templateMenu" title="Return to the Home page."/>-->
+<!--                        <p:panel id="avatar" toggleable="true" styleClass="avatarPanel">
+                            <p:graphicImage url="../resources/images/pinImages/1-1.jpg"/>
+                        </p:panel>-->
+                    </p:panel>
+                    <p:separator />
+                    </center>
+            </h:form>
+    </ui:composition>
+
+</html>
